@@ -10,25 +10,41 @@ body{
 }
 
 main{
+    padding-top: 130px;
     height: 720px;
     display: flex;
     justify-content: center;
-    padding: 41px;
+    margin: auto;
+    gap: 85px;
 }
 
 #column1{
+    margin-top: 46px;
     font-size: 28px;
+    font-weight: 400;
+    color: #1c1e21;
+    max-width: 500px;
+    page-break-inside: auto;
 }
 
 #column1 > img{
-    height: 45px;
+    overflow-y: visible;
+    height: 106px;
+    border: 0;
+    margin-left: -28px;
+    margin-bottom: -15px;
+}
+
+#column2{
+    max-width: 395px;
+    text-align: center;
 }
 
 form{
     display: grid;
     background-color: rgb(255, 255, 255);
-    border-radius: 7px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 396px;
     justify-content: center;
@@ -57,25 +73,56 @@ button{
     min-height: 48px;;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 input{
     width: 100%;
     border: 1px solid rgb(221,223,226);
     height: 49px;
+    font-size: 17px;
+    padding: 17px;
+}
+
+input:focus{
+    outline: 1px solid rgba(24, 118, 242, 0.76);
 }
 
 button, input{
     border-radius: 6px;
 }
 
-a{
+form > a{
     text-decoration: none;
     font-size: 14px;
     color: rgb(24, 119, 242);
     padding-bottom: 22px;
     border-bottom: 1px solid rgb(218,221,225);
+    max-height: 396px;
+    max-width: 350px;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+aside{
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+aside > p > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 footer{
     background-color: white;
+    color: rgb(115,115,115);
     text-align: center;
+    height: 100px;
+    padding: 40px;
 }
