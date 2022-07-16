@@ -1,128 +1,133 @@
-*{
+* {
+    text-decoration: none;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    border: none;
+    font-family: Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: rgb(240,242,245);
 }
 
-main{
-    padding-top: 130px;
-    height: 720px;
+.principal {
     display: flex;
-    justify-content: center;
-    margin: auto;
-    gap: 85px;
+    justify-content: space-around;
+    padding: 112px 40px 72px 40px;
+    padding-top: 72px;
 }
 
-#column1{
-    margin-top: 46px;
-    font-size: 28px;
-    font-weight: 400;
-    color: #1c1e21;
-    max-width: 500px;
-    page-break-inside: auto;
+.conteudos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    gap: 140px;
 }
 
-#column1 > img{
-    overflow-y: visible;
+.conteudo-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.conteudo-1-logo {
     height: 106px;
-    border: 0;
-    margin-left: -28px;
-    margin-bottom: -15px;
+    margin: -28px;
 }
 
-#column2{
-    max-width: 395px;
-    text-align: center;
+.conteudo-1-intro {
+    font-weight: 400;
+    font-size: 24px;
 }
 
-form{
-    display: grid;
-    background-color: rgb(255, 255, 255);
+.conteudo-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 30px;
+}
+
+.conteudo-2-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
     border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 396px;
-    justify-content: center;
-    text-align: center;
-    gap: 16px;
+    gap: 12px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
 
-#sigin{
-    background-color: rgb(24,119,242);
+.conteudo-2-formulario-inputs {
+    border: 0.5px solid  rgb(221,223,226);
+    height: 50px;
     width: 364px;
-    font-size: 20px;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 12px;
+    size: 12px;
 }
 
-#sigin-up{
-    background-color: rgb(66,183,42);
-    max-width: fit-content;
-    margin: auto;
-    font-size: 17px;
-}
-
-button{
+.conteudo-2-formulario-entrar {
+    background-color: rgb(24,119,242);
+    border-radius: 7px;
+    height: 48px;
+    width: 364px;
+    padding: 6px;
     color: white;
-    font-weight: bold;
-    border: none;
-    padding: 11px;
-    min-height: 48px;;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-button:hover{
+.conteudo-2-formulario-entrar:hover {
     cursor: pointer;
 }
 
-input{
-    width: 100%;
-    border: 1px solid rgb(221,223,226);
-    height: 49px;
-    font-size: 17px;
-    padding: 17px;
-}
-
-input:focus{
-    outline: 1px solid rgba(24, 118, 242, 0.76);
-}
-
-button, input{
-    border-radius: 6px;
-}
-
-form > a{
-    text-decoration: none;
-    font-size: 14px;
+.conteudo-2-formulario-ancora {
+    text-align: center;
     color: rgb(24, 119, 242);
-    padding-bottom: 22px;
-    border-bottom: 1px solid rgb(218,221,225);
-    max-height: 396px;
-    max-width: 350px;
+    font-size: 14px;
 }
 
-a:hover{
+.conteudo-2-formulario-ancora:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-aside{
-    font-size: 14px;
-    margin-top: 30px;
+.conteudo-2-formulario-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid rgb(218,221,225);
+    padding: 26px 0 8px 0;
+    width: 100%;
 }
 
-aside > p > a{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+.conteudo-2-formulario-cadastrar {
+    background-color: rgb(66,183,42);
+    border-radius: 7px;
+    height: 48px;
+    padding: 6px 16px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    width: max-content;
 }
 
-footer{
-    background-color: white;
-    color: rgb(115,115,115);
+.conteudo-2-formulario-cadastrar:hover {
+    cursor: pointer;
+}
+
+.conteudo-2-criar-pagina {
     text-align: center;
-    height: 100px;
-    padding: 40px;
+    font-size: 12px;
+}
+
+.conteudo-2-criar-pagina > a {
+    font-weight: bold;
 }

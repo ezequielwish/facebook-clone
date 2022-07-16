@@ -9,25 +9,27 @@
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <section id="column1">
-            <img src="assets/images/logo.svg" alt="Facebook Logo">
-            <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        </section>
-        <section id="column2">
-            <form>
-                <input type="email" id="user" placeholder="Email ou telefone">
-                <input type="password" id="password" placeholder="Senha">
-                <button id="sigin">Entrar</button>
-                <a>Esqueceu a senha?</a>
-                <button id="sigin-up">Criar nova conta</button>
-            </form>
-            <aside>
-                <p><a>Criar uma Página</a> para uma celebridade, uma marca ou uma empresa.</p>
-            </aside>
+    <main class="principal">
+        <section class="conteudos">
+            <div class="conteudo-1">
+                <img src="assets/images/logo.svg" alt="Facebook Logo" class="conteudo-1-logo">
+                <p class="conteudo-1-intro">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            </div>
+            <div class="conteudo-2">
+                <form class="conteudo-2-formulario">
+                    <input class="conteudo-2-formulario-inputs" type="text" id="user" placeholder="Email ou telefone">
+                    <input class="conteudo-2-formulario-inputs" type="password" id="password" placeholder="Senha">
+                    <button class="conteudo-2-formulario-entrar">Entrar</button>
+                    <a class="conteudo-2-formulario-ancora">Esqueceu a senha?</a>
+                    <div class="conteudo-2-formulario-rodape">
+                        <button class="conteudo-2-formulario-cadastrar">Criar nova conta</button>
+                    </div>
+                </form>
+                <p class="conteudo-2-criar-pagina"><a>Criar uma Página</a> para uma celebridade, uma marca ou uma empresa.</p>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="rodape">
         <p>Facebook 2022</p>
     </footer>
 </body>
