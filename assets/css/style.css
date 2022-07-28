@@ -81,6 +81,11 @@ body {
     outline: 1px solid #e7f3ff;
 }
 
+.conteudo-2-formulario-inputs::placeholder{
+    font-size: 17px;
+    color: #979797;
+}
+
 .conteudo-2-formulario-entrar {
     background-color: #1877f2;
     border-radius: 7px;
@@ -162,3 +167,21 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 890px) {
+    .conteudos {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 40px;
+    }
+    .conteudo-1 {
+        align-items: center;
+        padding: 16px;
+        font-size: 0.8em;
+    }
+
+    .conteudo-1-logo {
+        height: 115px;
+    }
+
+}
